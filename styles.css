@@ -1,0 +1,395 @@
+/* GLOBAL */
+
+/* MOBILE */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.theme {
+  --one: #ffffff;
+  --two: #A7A27F;
+  --three: #B0633B;
+  --four: #742F0E;
+  --five: #738FA7;
+  --six: #555555;
+  width: 100vw;
+      height: ;
+      max-width:100%;
+      overflow-x: hidden;
+
+}
+
+.row {
+  margin: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* FONT SIZE */
+
+h1 {
+  color: var(--four);
+  font-size: 3rem;
+  font-family: "Josefin Sans";
+}
+
+h2 {
+  font-family: 'Crimson Pro', serif;
+  letter-spacing: .2rem;
+  color: var(--one);
+}
+
+h2 a {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .2rem;
+  color: var(--one);
+  text-decoration: none;
+}
+
+h2 a:hover {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .2rem;
+  color: var();
+  text-decoration: none;
+}
+
+
+h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--one);
+}
+
+.sources {
+  color: black !important;
+  padding: 0;
+  margin: 0;
+}
+
+
+h5 a:hover {
+color: var();
+}
+
+h3 a:hover {
+  color: var();
+}
+
+p {
+  color: var(--one);
+  background-color: ;
+  font-family: 'Josefin Sans', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: .5rem 0;
+}
+
+p a {
+  color: var(--one);
+  font-family: 'Josefin Sans', serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+
+
+p a:hover {
+  color: var();
+  font-family: 'Josefin Sans', serif;
+  font-size: 1.1rem;
+}
+
+/*  */
+
+
+hr {
+  border: .5px solid var(--one);
+  opacity: 1;
+  margin: ;
+  width: 50%;
+}
+
+
+/* HEADER */
+
+.header {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  color: var(--four);
+  z-index: 30;
+  align-items: center;
+}
+
+.logo {
+  color: var(--four);
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo:hover {
+  color: var();
+}
+
+h1 a {
+  color: var(--four);
+  text-decoration: none;
+  letter-spacing: .2rem;
+  font-weight: bolder;
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+}
+
+h1 a:hover {
+  color: var();
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 5rem;
+  background-color: var(--one);
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 0 3rem 0;
+}
+
+.social {
+  padding: 1rem 0;
+}
+
+.copyright {
+  padding: 1rem 0;
+}
+
+.copyright p {
+  display: inline;
+  text-align: center;
+  color: var(--six);
+  font-family: 'Raleway', serif;
+  font-size: 1rem;
+  padding: 0 0 2rem 0;
+}
+
+.footer i {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--six);
+}
+
+.footer i:hover {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: var();
+}
+
+
+/* CARD */
+
+.card {
+  position: relative;
+  display: inline-block;
+  transition: all .5s ease-in;
+  border-radius: 0;
+  border-style: none;
+  border-color: transparent;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card:hover .card__overlay {
+  opacity: .3;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: .5s ease;
+  background-color: var(--four);
+}
+
+.card-text {
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+padding: 1rem 1rem 0 1rem;
+}
+
+.card-text p a {
+  color: white;
+  font-family: 'Josefin Sans', serif;
+  font-size: 2rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.overlay__text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
+  color: white;
+  font-family: 'Josefin Sans', serif;
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.overlay__text p a {
+  color: white;
+  font-family: 'Raleway', serif;
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  opacity: 1;
+}
+
+
+.wine-1 {
+  height: auto;
+  background-color: var(--three);
+  margin: ;
+  padding: 1rem;
+}
+
+.wine-2 {
+  height: auto;
+  background-color: var(--two);
+  margin: ;
+  padding: 1rem;
+}
+
+.wine-3 {
+  height: auto;
+  background-color: var(--four);
+  margin: ;
+  padding: 1rem;
+}
+
+.wine-4 {
+  height: auto;
+  background-color: var(--five);
+  margin: ;
+  padding: 1rem;
+}
+
+
+.winery {
+  width: 100vw;
+      height: ;
+      max-width:100%;
+}
+
+.vineyard {
+  font-weight: bolder;
+}
+
+h4 a:hover {
+  color: var(--)
+}
+
+a {
+  color: var(--one);
+  text-decoration: none;
+}
+
+a p:hover {
+  color: var(--) !important;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.page-heading {
+  width: 80vw;
+  margin: auto;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 768px) {
+
+  .content {
+    padding: 0;
+    margin: 0;
+  }
+
+  .index {
+    width: 100vw;
+    margin: auto;
+  }
+
+  .header {
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: var(--four);
+    z-index: 30;
+    align-items: center;
+  }
+
+  h1 {
+    color: var(--four);
+    font-size: 3vw;
+    font-family: "Josefin Sans";
+  }
+
+  h1 a {
+    color: var(--four);
+    text-decoration: none;
+    letter-spacing: .2rem;
+    font-weight: bolder;
+    font-family: "Josefin Sans";
+    font-size: 3vw;
+  }
+
+  h1 a:hover {
+    color: var(--);
+    font-family: "Josefin Sans";
+    font-size: 3vw;
+  }
+}
