@@ -11,12 +11,13 @@ body {
   overflow-x: hidden;
 }
 
+
 .theme {
   --one: #ffffff;
-  --two: #A7A27F;
-  --three: #B0633B;
+  --two: #5e5727;
+  --three: #8a3e16;
   --four: #742F0E;
-  --five: #738FA7;
+  --five: #385166;
   --six: #555555;
   width: 100vw;
       height: ;
